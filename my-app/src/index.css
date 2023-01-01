@@ -19,3 +19,24 @@ nav img{
   margin: 0 auto;
   text-align: center;
 }
+.nav-items{
+  list-style-type: none;
+  display: flex;
+  gap: 20px;
+  padding: 10px;
+  justify-content: center;
+  align-items: flex-end;
+  align-content: center;
+}
+.navbar{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+.brand{
+  color: white;
+}
+.links{
+  color: white;
+}

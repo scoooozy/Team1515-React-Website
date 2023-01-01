@@ -1,16 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-function Header(){
-  return(
-    <header>
-      <nav>
-        <img src='images/logo512.png' alt='logo'/>
-        <h2 className='htext'>Scoozy's website</h2>
-      </nav>
-    </header>
-  )
-}
+import 'bootstrap/dist/css/bootstrap.min.css';
+import Navbar from "./Navbar.jsx"
+
 function Footer(){
   return(
     <footer> 
@@ -27,7 +20,7 @@ function Ex(){
 function App(){
   return(
     <div>
-      <Header/>
+        <Navbar/>
         {/* <img src="images/logo512.png" width="40px" alt='hi' />
         <h1>Fun facts about React</h1> */}
         <Ex/>
