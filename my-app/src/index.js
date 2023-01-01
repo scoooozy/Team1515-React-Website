@@ -1,36 +1,35 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-function Navbar() {
-  return(
-      <nav>
-          <h1>Pukan production</h1>
-          <ul>
-              <li>About</li>
-              <li>Pricing</li>
-              <li>Contact</li>
-          </ul>
-      </nav>
-  )
-}
-function Container(){
-  return(
-      <div className="container">
-          <div className="row">
-              <div className="col">
-              Hi Pukan
-              </div>
-              <div className="col">
-              Hey segey
-              </div>
-          </div>
-      </div>
+
+
+
+
+function App(){
+  return (
+    
+    
+    <div>
+      <img src='images/react-logo.png' alt="BigCo Inc. logo" className='logo'/>
+      <h1>Hello World</h1>
+      <h3>Fun Facts about React</h3>
+      <ul>
+        <li>Was First released in 2013</li>
+        <li>Was orginally created by Jordan Walke </li>
+        <li>Has well over 100k stars on github</li>
+        <li>is maintained by Facebook</li>
+        <li>Powers thousands of enteprise apps; including apps</li>
+
+      </ul>
+    </div>
+      
+
   )
 }
 let page = (
   <div>
-      <Navbar/>
-      <Container/>
+
+    <App/>
   </div>
 )
 

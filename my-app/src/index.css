@@ -10,8 +10,18 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.logo{
+  width: 50px;
+}
+#root{
+  background-color: rgb(28, 172, 124);
+}
+h1{
+  color: white;
+}
+h3{
+  color: white;
+}
+li{
+  color: white;
 }
