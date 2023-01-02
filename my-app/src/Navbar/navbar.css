@@ -1,0 +1,12 @@
+.nav{
+    color: white;
+    background-color: none !important;
+    font-size: 3vh;
+    padding: 15px 0;
+}
+.nav-item{
+    color: white;
+}
+.nav-header{
+    color: white;
+}
