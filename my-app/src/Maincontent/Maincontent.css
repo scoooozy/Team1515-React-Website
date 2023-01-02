@@ -23,7 +23,13 @@
     padding: 10px;  
 }
 .container{ 
-    height: 100vh   
+    height: 100%   
+}
+.mor{
+    color: orange;
+}
+.torq{
+    color: white;
 }
 .bg{
     -webkit-background-size: cover;
@@ -40,8 +46,50 @@
     
 }
 .header{
-    padding: 150px 0;
+    padding: 100px 10px 20px 10px;
     text-align: center;
     color: white;
-    font-size: 48px;
+    font-size: 60px;
+
+}
+.col-item{
+    padding: 20px 0 50px 0;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.btn{
+    font-family: Roboto, sans-serif;
+    font-weight: 399;
+    font-size: 18px;
+    color: #fff;
+    background-color: #ff984a00;
+    padding: 10px 30px;
+    border: solid #ffffff 2px;
+    box-shadow: rgb(14 30 37 / 12%) 0px 2px 4px 0px, rgb(14 30 37 / 32%) 0px 2px 16px 0px;
+    border-radius: 1px;
+    transition: 346ms;
+    transform: translateY(0);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    cursor: pointer;
+    text-transform: lowercase;
+    margin: 15px 0 50px 0;
+    
+}
+.subheading{
+    color: white;
+    padding: 15px 0;
+}
+.text{
+    color: white;
+    font-size: 18px;
+    padding: 15px 5px;
+}
+.hr{
+    color: white;
+    height: 2px;
+    background-color: white;
 }

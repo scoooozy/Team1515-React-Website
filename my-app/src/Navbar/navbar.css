@@ -2,11 +2,18 @@
     color: white;
     background-color: none !important;
     font-size: 3vh;
-    padding: 15px 0;
+    padding: 20px 0;
 }
 .nav-item{
     color: white;
+    font-size: 18px;
 }
 .nav-header{
     color: white;
+    font-size: 25px;
+}
+.logo{
+    width: calc(95px + (45 - 25) * ((100vw - 300px) / (1300 - 300)));
+    padding: 0 15px;
+    margin: 0 10px;
 }

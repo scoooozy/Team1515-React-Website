@@ -5,14 +5,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import Navbar from "./Navbar/Navbar.jsx"
 import Maincontent from "./Maincontent/Maincontent.jsx"
 import "../src/Maincontent/Maincontent.css"
-
-function Footer(){
-  return(
-    <footer> 
-      <h3>2022 Scoozy development, All rights reserved </h3>
-    </footer>
-  )
-}
+import Footer from './Footer/Footer';
 function App(){
   return(
     <div className='wrapper '>
@@ -20,8 +13,6 @@ function App(){
       <Navbar/>
         <Maincontent/>
       </section>
-
-
         <Footer/>
     </div>
     

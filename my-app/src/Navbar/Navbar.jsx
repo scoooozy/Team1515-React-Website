@@ -10,6 +10,7 @@ function ColorSchemesExample() {
 
       <Navbar className='nav' variant="dark">
         <Container fluid>
+          <img src="./images/logo.png" alt="lol" className='logo'/>
           <Navbar.Brand href="#home" className='nav-header'>Better Mortorq</Navbar.Brand>
           <Nav className="me-auto">
             <Nav.Link href="#home" className='nav-item'>Home</Nav.Link>
