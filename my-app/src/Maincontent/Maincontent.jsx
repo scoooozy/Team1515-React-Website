@@ -8,18 +8,9 @@ function ContainerFluid() {
     
       
         <Container className='container'>
-        <Row className='header'>
-            <Col className='col-item'>
-                <h2 className='header'><span className="mor">BetterMor</span><span className='torq'>Torq</span></h2>            
-                <button  className='btn' href="#history">
-                Learn More
-              </button> 
-              
-            </Col>
-        </Row>
       <Row>
 
-        <Col>          
+        {/* <Col>          
             <ul className='list'>
                 <li className="ulElment">It's made using react js</li>
                 <li className="ulElment">It was only made by me</li>
@@ -32,7 +23,7 @@ function ContainerFluid() {
                 <li className="ulElment">The load time is faster</li>
                 <li className="ulElment">This website will look better</li>
             </ul>
-          </Col>
+          </Col> */}
       </Row>
       <Row className='teamhistory'>
       <h2 className='H2' id='history'>Team History</h2>

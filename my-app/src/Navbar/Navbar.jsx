@@ -1,39 +1,20 @@
-import Container from 'react-bootstrap/Container';
-import Nav from 'react-bootstrap/Nav';
-import Navbar from 'react-bootstrap/Navbar';
-import NavDropdown from 'react-bootstrap/NavDropdown';
+
 import "./navbar.css"
 
 function ColorSchemesExample() {
   return (
-    <>
-
-      <Navbar className='nav' variant="dark">
-        <Container fluid>
-          <img src="./images/logo.png" alt="lol" className='logo'/>
-          <Navbar.Brand href="#home" className='nav-header'>Better Mortorq</Navbar.Brand>
-          <Nav className="me-auto">
-            <Nav.Link href="#home" className='nav-item'>Home</Nav.Link>
-            <NavDropdown
-              id="nav-dropdown-dark-example"
-              title="About"
-              menuVariant="dark"
-              style={{color:"white",}}
-            >
-              <NavDropdown.Item href="#action/3.1" className='nav-item'>Awards</NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.2" className='nav-item'>
-                Leaders
-              </NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.3 className='nav-item'">Outreach</NavDropdown.Item>
-              <NavDropdown.Divider />
-              <NavDropdown.Item href="#action/3.4" className='nav-item'>
-              Sponsors
-              </NavDropdown.Item>
-            </NavDropdown>
-          </Nav>
-        </Container>
-      </Navbar>
-    </>
+    <nav className="page-navbar" data-spy="affix" data-offset-top="10">
+    <ul class="nav-navbar container">
+        <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+        <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
+        <li class="nav-item"><a href="index.html" class="nav-link"><img src="./images/logo.png" alt="lol" className='logo'/> </a></li>
+        <li class="nav-item"><a href="sponsors.html" class="nav-link">Sponsors</a></li>
+        <li class="nav-item search">
+            <a href="https://www.bhef.org/apps/form/bhhsrobotics" target="_blank" class="nav-link search-toggle"><i class="ti-search"></i> Donate</a>
+            
+        </li>
+    </ul>
+  </nav>
   );
 }
 

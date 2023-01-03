@@ -1,5 +1,5 @@
 .padd{
-    padding-top: 10px;
+    padding-top: 15px;
     color: white;
 }
 .footer-container{
@@ -12,7 +12,7 @@
 }
 .link{
     text-align: center;
-    text-decoration: none;
+    text-decoration: underline;
     color: white;
     
 }
@@ -21,4 +21,8 @@
 }
 .padd h3{
     font-size: 16px;
+}
+.footer{
+    background-color: rgba(23, 22, 22, 0.934);
+
 }

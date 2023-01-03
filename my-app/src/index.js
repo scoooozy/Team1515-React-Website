@@ -6,13 +6,14 @@ import Navbar from "./Navbar/Navbar.jsx"
 import Maincontent from "./Maincontent/Maincontent.jsx"
 import "../src/Maincontent/Maincontent.css"
 import Footer from './Footer/Footer';
+import Header from './header/header';
+
 function App(){
   return(
     <div className='wrapper '>
-      <section className='bg'>
-      <Navbar/>
-        <Maincontent/>
-      </section>
+        <Navbar />
+        <Header/>
+        <Maincontent/>  
         <Footer/>
     </div>
     

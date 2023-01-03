@@ -10,7 +10,7 @@ function Header() {
 
             <a href="#scrollspyHeading1"><button href="#scrollspyHeading1" class="btn btn-theme-color modal-toggle">
                 <i class="ti-control-play text-danger"></i>
-                <a href="#scrollspyHeading1" style="color: white; text-decoration:none;">
+                <a href="#scrollspyHeading1" style={{color: "white", textDecoration:"none"}}>
                     Learn More
                 </a>
             </button></a>
