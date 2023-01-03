@@ -82,6 +82,7 @@
 .subheading{
     color: white;
     padding: 15px 0;
+    writing-mode: vertical-lr;
 }
 .text{
     color: white;
@@ -89,7 +90,27 @@
     padding: 15px 5px;
 }
 .hr{
-    color: white;
-    height: 2px;
-    background-color: white;
+    color: black;
+    height: 4px;
+    fill: black;
+}
+.H2{
+        color: white;
+    padding: 15px 0;
+}
+.teamhistory{
+    display: flex;
+}
+.col1{
+    display: flex;
+    padding: 0;
+}
+.vl{
+    border-left: 2px solid black;
+    height: 250px;
+    padding: 10px 10px;
+}
+.hl{
+    width: 90vw;
+    border-bottom: 2px solid black;
 }
