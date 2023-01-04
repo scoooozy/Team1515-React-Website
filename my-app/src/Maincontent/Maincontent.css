@@ -111,7 +111,7 @@
     
     padding: 10rem 0 0;
     margin: 20px 0 30px;
-    max-width: 45ch;
+    max-width: 42ch;
     border-radius: 0.5rem;
     overflow: hidden;
     transition: transform 500ms ease;
@@ -119,15 +119,13 @@
 .card:nth-child(2)
 {
     background-image: url("2020robot_highres.jpg");
-    transition-delay: 400ms; 
 }
 .card:nth-child(3){
     background-image: url("2019robot_highres.jpg");
-    transition-delay: 600ms; 
+
 }
 .card:hover{
-    transform: scale(1.05);
-
+    transform: scale(1.04);
 }
 
 .card-content{
@@ -209,7 +207,7 @@
     flex-wrap: wrap;
     align-items: center;
     align-content: center;
-    gap: 15px;
+    gap: 20px;
 }
 .heading{
     color: white;
@@ -231,11 +229,21 @@
 }
 .reveal {
     opacity: 0;
-    transition: all 2s;
-    filter: blur(3px);
+    transition: all 1.5s;
+    filter: blur(5px);
     transform: translateX(-100%);
 }
-
+.card.reveal{
+    transition-delay: 700ms;
+}
+.card:nth-child(2).reveal{
+    transition-delay: 400ms;
+    z-index: -1;
+}
+.card:nth-child(3).reveal{
+    transition-delay: 100ms;
+    z-index: -2;
+}
 .active{
     opacity: 1;
     filter: blur(0);

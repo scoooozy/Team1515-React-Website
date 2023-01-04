@@ -2,6 +2,8 @@ import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import "./Maincontent.css";
 
+
+
 function reveal() {
   let reveals = document.querySelectorAll(".reveal");
 
@@ -13,55 +15,58 @@ function reveal() {
     if (elementTop < windowHeight - elementVisible) {
       reveals[i].classList.add("active");
     }
+    // else {
+    //   reveals[i].classList.remove("active");
+    // }
   }
 }
 
 window.addEventListener("scroll", reveal);
-
 
 function ContainerFluid() {
   return (
     <Container className="container">
       <section className="teamhistory reveal">
         <Row>
-        <h2 className="H2" id="history">
-          Team History
-        </h2>
-
-        <div className="hl"></div>
-
-        <div className="col1">
-          <h2 className="vheading " id="history">
+          <h2 className="H2" id="history">
             Team History
           </h2>
-          <div className="vl"></div>
-          <p className="text">
-            Our team competes in the FIRST robotics competition as Team 1515.
-            Team 1515 was founded in the fall of 2004 under the leadership of
-            Former Principal of Beverly Hills High School Dr. Dan Stepenosky,
-            member of the School Board Dr. Myra Demeter, Beverly Hills High
-            School Chemistry Teacher Charles Lee, and parent Eileen Kahn. Under
-            their leadership, Team 1515 grew to become a well-known team. Our
-            team continued to flourish with the help of parent Eileen Kahn, who
-            became a credentialed teacher to keep the program in existence.
-            Thanks to the strong leadership and dedication of our teacher, John
-            Castle, our team is moving full S.T.E.A.M ahead. With new student
-            leadership, more efficient subdivisions, and fresh thinking, MorTorq
-            is reaching for the stars. Currently, we have 42 students enrolled,
-            along with many other affiliated with our robotics business team. In
-            2019, we had the honor to be awarded the prestigious Chairman's
-            Award and traveled to the FRC International Competition with our
-            registration fee sponsored by NASA. The 2022-2023 FIRST season will
-            be our team’s ninteenth year competing.
-          </p>
-        </div>
+
+          <div className="hl"></div>
+
+          <div className="col1">
+            <h2 className="vheading " id="history">
+              Team History
+            </h2>
+            <div className="vl"></div>
+            <p className="text">
+              Our team competes in the FIRST robotics competition as Team 1515.
+              Team 1515 was founded in the fall of 2004 under the leadership of
+              Former Principal of Beverly Hills High School Dr. Dan Stepenosky,
+              member of the School Board Dr. Myra Demeter, Beverly Hills High
+              School Chemistry Teacher Charles Lee, and parent Eileen Kahn.
+              Under their leadership, Team 1515 grew to become a well-known
+              team. Our team continued to flourish with the help of parent
+              Eileen Kahn, who became a credentialed teacher to keep the program
+              in existence. Thanks to the strong leadership and dedication of
+              our teacher, John Castle, our team is moving full S.T.E.A.M ahead.
+              With new student leadership, more efficient subdivisions, and
+              fresh thinking, MorTorq is reaching for the stars. Currently, we
+              have 42 students enrolled, along with many other affiliated with
+              our robotics business team. In 2019, we had the honor to be
+              awarded the prestigious Chairman's Award and traveled to the FRC
+              International Competition with our registration fee sponsored by
+              NASA. The 2022-2023 FIRST season will be our team’s ninteenth year
+              competing.
+            </p>
+          </div>
         </Row>
       </section>
       <h1 className="robotheading reveal">Our Robots</h1>
       <section className="robot-section reveal">
         <div className="hlr reveal"></div>
         <div className="card-container reveal">
-          <div class="card">
+          <div class="card reveal">
             <div class="card-content">
               <h2 class="card-title">Rapid React </h2>
               <h4>2022</h4>
@@ -77,7 +82,7 @@ function ContainerFluid() {
               </p>
             </div>
           </div>
-          <div class="card">
+          <div class="card reveal">
             <div class="card-content">
               <h2 class="card-title">Infinite Recharge</h2>
               <h4>2020</h4>
@@ -91,7 +96,7 @@ function ContainerFluid() {
               </p>
             </div>
           </div>
-          <div class="card">
+          <div class="card reveal">
             <div class="card-content">
               <h2 class="card-title">Destination Deepspace </h2>
               <h4>2019</h4>
@@ -105,6 +110,8 @@ function ContainerFluid() {
                 <br></br>
                 <br></br>
                 <br></br>
+                <br />
+                {/* I'M SO SORRY FOR DOING THIS PLS DONT JUDGE ME IT WAS THE EASIEST SOLUTION*/}
               </p>
             </div>
           </div>
