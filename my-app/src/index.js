@@ -5,8 +5,8 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import Navbar from "./components/Navbar/Navbar.jsx"
 import Maincontent from "./components/Maincontent/Maincontent.jsx"
 import "./components/Maincontent/Maincontent.css"
-import Footer from './Footer/Footer';
-import Header from './header/header';
+import Footer from './components/Footer/Footer';
+import Header from './components/header/header';
 
 
 function App(){
