@@ -57,6 +57,7 @@
     color: black;
     padding: 15px 0;
     writing-mode: vertical-lr;
+    font-size: 2.5rem;
 }
 .text{
     color: black;
@@ -67,6 +68,7 @@
 .H2{
         color: black;
     padding: 15px 0;
+    font-size: 2.5rem;
 }
 .teamhistory{
     display: flex;
@@ -116,9 +118,11 @@
 .card:nth-child(2)
 {
     background-image: url("2020robot_highres.jpg");
+    transition-delay: 400ms; 
 }
 .card:nth-child(3){
     background-image: url("2019robot_highres.jpg");
+    transition-delay: 600ms; 
 }
 .card:hover{
     transform: scale(1.05);
@@ -192,6 +196,9 @@
         scroll-behavior: auto !important;
         transition-delay: 0ms !important;
     }
+    .reveal{
+        transition: none;
+    }
 }
 
 .card-container{
@@ -220,4 +227,16 @@
 .text{
     color: inherit;
     padding: 1.5rem 2rem;
+}
+.reveal {
+    opacity: 0;
+    transition: all 1.5s;
+    filter: blur(5px);
+    transform: translateX(-100%);
+}
+
+.active{
+    opacity: 1;
+    filter: blur(0);
+    transform: translate(0);
 }

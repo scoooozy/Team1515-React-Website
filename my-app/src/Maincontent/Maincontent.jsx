@@ -2,10 +2,30 @@ import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import "./Maincontent.css";
 
+function reveal() {
+  let reveals = document.querySelectorAll(".reveal");
+
+  for (let i = 0; i < reveals.length; i++) {
+    let windowHeight = window.innerHeight;
+    let elementTop = reveals[i].getBoundingClientRect().top;
+    let elementVisible = 100;
+
+    if (elementTop < windowHeight - elementVisible) {
+      reveals[i].classList.add("active");
+    } else {
+      reveals[i].classList.remove("active");
+    }
+  }
+}
+
+window.addEventListener("scroll", reveal);
+
+
 function ContainerFluid() {
   return (
     <Container className="container">
-      <Row className="teamhistory">
+      <section className="teamhistory reveal">
+        <Row>
         <h2 className="H2" id="history">
           Team History
         </h2>
@@ -13,7 +33,7 @@ function ContainerFluid() {
         <div className="hl"></div>
 
         <div className="col1">
-          <h2 className="vheading" id="history">
+          <h2 className="vheading " id="history">
             Team History
           </h2>
           <div className="vl"></div>
@@ -37,11 +57,12 @@ function ContainerFluid() {
             be our team’s ninteenth year competing.
           </p>
         </div>
-      </Row>
-      <section className="robot-section">
-        <h1 className="robotheading">Our Robots</h1>
-        <div className="hl"></div>
-        <div className="card-container">
+        </Row>
+      </section>
+      <section className="robot-section reveal">
+        <h1 className="robotheading ">Our Robots</h1>
+        <div className="hl reveal"></div>
+        <div className="card-container reveal">
           <div class="card">
             <div class="card-content">
               <h2 class="card-title">Rapid React </h2>
@@ -91,7 +112,7 @@ function ContainerFluid() {
           </div>
         </div>
       </section>
-      <section className="previous-comp">
+      {/* <section className="previous-comp reveal">
         <h1>Previous Competitions</h1>
         <div className="hl"></div>
         <div className="info-card">
@@ -105,7 +126,7 @@ function ContainerFluid() {
           </div>
         </div>
 
-      </section>
+      </section> */}
     </Container>
   );
 }
