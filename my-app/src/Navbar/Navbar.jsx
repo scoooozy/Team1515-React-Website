@@ -1,10 +1,12 @@
 
 import "./navbar.css"
+import pic from "../images/MorTorq.png"
 
 function ColorSchemesExample() {
   return (
-    <header class="header">
-    <h3 class="name">MorTorq</h3>
+    <header class="nav-header">
+      <h3 class="name">Mor<span class="torq">Torq</span></h3>
+      
 <nav>
     <ul class="nav-links">
         <li class="li"><a href="http://" target="_blank" rel="noopener noreferrer">Home</a></li>
@@ -13,7 +15,7 @@ function ColorSchemesExample() {
         <li class="li"><a href="http://" target="_blank" rel="noopener noreferrer">Donate</a></li>
     </ul>
 </nav>
-  <img src="MorTorq.png" alt="logo" class="logo">
+  <img src={pic} alt="logo" class="logo" />
 </header>
   )
 }

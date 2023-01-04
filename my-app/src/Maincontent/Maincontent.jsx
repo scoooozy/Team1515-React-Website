@@ -59,9 +59,9 @@ function ContainerFluid() {
         </div>
         </Row>
       </section>
+      <h1 className="robotheading reveal">Our Robots</h1>
       <section className="robot-section reveal">
-        <h1 className="robotheading ">Our Robots</h1>
-        <div className="hl reveal"></div>
+        <div className="hlr reveal"></div>
         <div className="card-container reveal">
           <div class="card">
             <div class="card-content">

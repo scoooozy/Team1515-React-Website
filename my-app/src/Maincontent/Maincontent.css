@@ -73,6 +73,7 @@
 .teamhistory{
     display: flex;
     padding: 50px 0;
+    justify-content: center;
 }
 .col1{
     display: flex;
@@ -109,7 +110,7 @@
     background-size: cover;
     
     padding: 10rem 0 0;
-    margin: 20px 0 30px 0;
+    margin: 20px 0 30px;
     max-width: 45ch;
     border-radius: 0.5rem;
     overflow: hidden;
@@ -208,7 +209,7 @@
     flex-wrap: wrap;
     align-items: center;
     align-content: center;
-    gap: 10px;
+    gap: 15px;
 }
 .heading{
     color: white;
@@ -239,4 +240,16 @@
     opacity: 1;
     filter: blur(0);
     transform: translate(0);
+}
+.robot-section{
+    display: flex;
+    padding: 20px 0;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.hlr{
+    width: 80vw;
+    border-bottom: 2px solid black;
+
 }
