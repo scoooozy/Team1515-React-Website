@@ -1,62 +1,105 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 
-*{
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
-a,li {
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 500;
-    font-size: 16px;
-    color: black;
-    text-decoration: none;
-}
-nav{
-    display: flex;
-}
-.nav-header{
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    padding: 25px 5% 25px 5%;
-    background-color: #171616;
-    height: 90px;
-}
-.name{
-    margin-right: auto;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 500;
-    font-size: 24px;
-    color: #edf0f1;
-    text-decoration: none;
-    text-align: center;
-}
-.logo{
-    cursor: pointer;
-    width: calc(80px + (45 - 25) * ((100vw - 300px) / (1300 - 300)));
-    padding: 10px 10px;
-}
-.nav-links{
-list-style: none;
-}
-.nav-links .li{
-    display: inline-block;
-    padding: 0px 20px ;
-}
-.nav-links .li a{
-    transition: all 0,3 ease 0s;
-    color: #edf0f1;
-    text-decoration: none;
-}
-.nav-links .li a:hover{
-    transition: all 0,3 ease 0s;
-    color:rgb(237, 196, 139);
-}
-.torq{
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 500;
-  font-size: 24px;
-  color: #f28f2c !important;
+  list-style: none;
   text-decoration: none;
+  font-family: "Montserrat", sans-serif;
 }
+body {
+  background-color: darkgray;
+}
+header {
+  width: 100%;
+  height: 90px;
+  background-color: #11101b;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 100px;
+}
+.logo {
+  cursor: pointer;
+  width: calc(70px + (45 - 25) * ((100vw - 300px) / (1300 - 300)));
+  padding: 0 10px;
+}
+img {
+  width: inherit;
+}
+
+.hamburger {
+  display: none;
+}
+.nav-bar ul {
+  display: flex;
+}
+.nav-bar ul li a {
+  display: block;
+  color: rgb(231, 215, 215);
+  padding: 10px 25px;
+  border-radius: 50px;
+  transition: 0.2s;
+  margin: 0 5px;
+}
+.nav-bar ul li a:hover {
+  color: black;
+  background-color: white;
+}
+.nav-bar ul li a.active {
+  color: black;
+  background-color: white;
+}
+@media only screen and (max-width: 1320px) {
+  header {
+    padding: 0 50px;
+  }
+}
+@media only screen and (max-width: 1100px) {
+    header {
+      padding: 0 30px;
+    }
+  }
+  @media only screen and (max-width: 900px) {
+   .hamburger{
+    display: block;
+    cursor: pointer;
+   }
+   .hamburger .line{
+    width: 30px;
+    height: 3px;
+    background: white;
+    margin: 6px 0;
+   }
+   .nav-bar{
+    height: 0;
+    position: absolute;
+    top: 80px;
+    left: 0;
+    right: 0;
+    width: 100vw;
+    background: #11101b;
+    transition: 0.2s;
+    overflow: hidden;
+   }
+   .nav-bar.active{
+    height: 350px;
+   }
+   .nav-bar ul {
+    display: block;
+    width: fit-content;
+    margin: 80px auto 0 auto;
+    text-align: center;
+    transition: 0.5s;
+    opacity: 0;
+
+   }
+   .nav-bar.active ul{
+    opacity: 1;
+   }
+   .nav-bar ul li a{
+    margin-bottom: 12px; 
+   }
+  }
+  
