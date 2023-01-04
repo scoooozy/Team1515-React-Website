@@ -12,12 +12,16 @@ a,li {
     color: black;
     text-decoration: none;
 }
+nav{
+    display: flex;
+}
 .nav-header{
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    padding: 25px 10% 10px 10%;
+    padding: 25px 5% 25px 5%;
     background-color: #171616;
+    height: 90px;
 }
 .name{
     margin-right: auto;
@@ -31,7 +35,7 @@ a,li {
 .logo{
     cursor: pointer;
     width: calc(80px + (45 - 25) * ((100vw - 300px) / (1300 - 300)));
-    padding: 0 10px;
+    padding: 10px 10px;
 }
 .nav-links{
 list-style: none;
