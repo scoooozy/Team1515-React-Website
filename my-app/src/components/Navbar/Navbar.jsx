@@ -1,32 +1,27 @@
 
+
 import "./navbar.css"
 import pic from "../images/MorTorq.png"
 
-let hamburger = document.querySelector(".hamburger")
-hamburger.onclick = ()=>{
-    navBar = document.querySelector(".nav-bar")
-    navBar.classList.toggle("active")
-}
-function ColorSchemesExample() {
+function Navbar() {
+    
   return (
-    <header>
-    <div class="logo"><img src={pic} alt=""></div>
-    <div class="hamburger">
-        <div class="line"></div>
-        <div class="line"></div>
-        <div class="line"></div>
+    <header className="nav-header">
+          <div class="logo">
+              <img src={pic} alt="logo" className="img"/>
     </div>
     <nav class="nav-bar">
         <ul>
-            <li><a href="#" class="active">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Sponsors</a></li>
-            <li><a href="#">Donate</a></li>
+            <li><a href="http://localhost:3000/" class="active">Home</a></li>
+            <li><a href="http://localhost:3000/">About</a></li>
+            <li><a href="http://localhost:3000/">Sponsors</a></li>
+            <li><a href="http://localhost:3000/">Donate</a></li>
 
         </ul>
-    </nav>
-</header>
+          </nav>
+      </header>
+      
   )
 }
 
-export default ColorSchemesExample;
+export default Navbar;

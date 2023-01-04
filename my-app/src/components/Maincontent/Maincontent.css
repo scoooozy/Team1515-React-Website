@@ -111,7 +111,7 @@
     
     padding: 10rem 0 0;
     margin: 20px 0 30px;
-    max-width: 42ch;
+    max-width: 43ch;
     border-radius: 0.5rem;
     overflow: hidden;
     transition: transform 500ms ease;
@@ -141,7 +141,7 @@
 
 
 .card-title{
-    font-size: 30px;
+    font-size: 34px;
     position: relative;
     width: max-content;
 }
