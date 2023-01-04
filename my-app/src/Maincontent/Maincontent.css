@@ -230,8 +230,8 @@
 }
 .reveal {
     opacity: 0;
-    transition: all 1.5s;
-    filter: blur(5px);
+    transition: all 2s;
+    filter: blur(3px);
     transform: translateX(-100%);
 }
 
