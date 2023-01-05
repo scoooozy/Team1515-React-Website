@@ -1,6 +1,7 @@
 
 
 import "./navbar.css"
+
 import pic from "../images/MorTorq.png"
 
 function Navbar() {

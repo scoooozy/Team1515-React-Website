@@ -1,7 +1,8 @@
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import "./Maincontent.css";
-
+import ventura from "../images/ventura.jpg"
+import gameChangers from "../images/gameChangers.jpg"
 
 
 function reveal() {
@@ -118,21 +119,33 @@ function ContainerFluid() {
           </div>
         </div>
       </section>
-      {/* <section className="previous-comp reveal">
-        <h1>Previous Competitions</h1>
-        <div className="hl"></div>
-        <div className="info-card">
-            <img src="./ventura.jpg" alt="" className="info-image" />
+      <h1 className="robotheading reveal">Previous Competitions</h1>
+      <div className="hl reveal"></div>
+      <section className="previous-comp reveal">
+        
+        
+        <div className="info-card reveal">
+            <img src={ventura} alt="" className="info-image" />
           <div className="content">
             <h2 className="heading">FRC-Rapid React</h2>
             <h3 className="subheading">2022</h3>
             <p className="text">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea magnam ad saepe sequi dicta reiciendis molestiae alias commodi odit numquam!
-            </p>
+            In the 2022 season, our team participated in the LA and Ventura regionals and won up to quarter finals in both tournaments. Our team was also twice awarded imagery award.
+
+</p>
+          </div>
+        </div>
+        <div className="info-card reveal">
+            <img src={gameChangers} alt="" className="info-image" />
+          <div className="content">
+            <h2 className="heading">FRC-Game Changers</h2>
+            <h3 className="subheading">2021</h3>
+            <p className="text">
+            For the 2021 season, our team competed in the three at home challenges offered by FIRST: Infinite Recharge at Home, Game Design Challenge, and Innovation Challenge.            </p>
           </div>
         </div>
 
-      </section> */}
+      </section> 
     </Container>
   );
 }
