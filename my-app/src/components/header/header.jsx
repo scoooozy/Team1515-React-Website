@@ -2,7 +2,8 @@ import "../header/header.css"
 
 function Header() {
     return (
-                <header class="header">
+        <hero>
+            <header class="header">
         <div class="overlay"></div>
         <div class="header-content">      
                 <h1 class="header-title animate__animated animate__fadeIn" >MOR<span style={{ color:"#FF5F00"  ,}} class="">TORQ</span></h1>
@@ -17,6 +18,8 @@ function Header() {
 
         </div>
     </header>
+        </hero>
+                
     )
 }
 

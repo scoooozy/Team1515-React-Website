@@ -273,10 +273,7 @@
     margin: 0 0 2rem;
     border-radius: 10px 5px;
     border-bottom: rgb(230, 228, 221) 1px solid;
-    transition: all 1s ease;
-}
-.info-image:hover{
-    transform:scale(1.1);
+    transition: all 0.4s ease;
 }
 .previous-comp{
     display: flex;

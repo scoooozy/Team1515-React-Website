@@ -1,9 +1,8 @@
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import "./Maincontent.css";
-import ventura from "../images/ventura.jpg"
-import gameChangers from "../images/gameChangers.jpg"
-
+import ventura from "../images/ventura.jpg";
+import gameChangers from "../images/gameChangers.jpg";
 
 function reveal() {
   let reveals = document.querySelectorAll(".reveal");
@@ -28,40 +27,45 @@ function ContainerFluid() {
   return (
     <Container className="container">
       <section className="teamhistory reveal">
-        <Row>
-          <h2 className="H2" id="history">
-            Team History
-          </h2>
+        <main>
+          <article>
+            <Row>
+              <h2 className="H2" id="history">
+                Team History
+              </h2>
 
-          <div className="hl"></div>
+              <div className="hl"></div>
 
-          <div className="col1">
-            <h2 className="vheading " id="history">
-              Team History
-            </h2>
-            <div className="vl"></div>
-            <p className="text">
-              Our team competes in the FIRST robotics competition as Team 1515.
-              Team 1515 was founded in the fall of 2004 under the leadership of
-              Former Principal of Beverly Hills High School Dr. Dan Stepenosky,
-              member of the School Board Dr. Myra Demeter, Beverly Hills High
-              School Chemistry Teacher Charles Lee, and parent Eileen Kahn.
-              Under their leadership, Team 1515 grew to become a well-known
-              team. Our team continued to flourish with the help of parent
-              Eileen Kahn, who became a credentialed teacher to keep the program
-              in existence. Thanks to the strong leadership and dedication of
-              our teacher, John Castle, our team is moving full S.T.E.A.M ahead.
-              With new student leadership, more efficient subdivisions, and
-              fresh thinking, MorTorq is reaching for the stars. Currently, we
-              have 42 students enrolled, along with many other affiliated with
-              our robotics business team. In 2019, we had the honor to be
-              awarded the prestigious Chairman's Award and traveled to the FRC
-              International Competition with our registration fee sponsored by
-              NASA. The 2022-2023 FIRST season will be our team’s ninteenth year
-              competing.
-            </p>
-          </div>
-        </Row>
+              <div className="col1">
+                <h2 className="vheading " id="history">
+                  Team History
+                </h2>
+                <div className="vl"></div>
+                <p className="text">
+                  Our team competes in the FIRST robotics competition as Team
+                  1515. Team 1515 was founded in the fall of 2004 under the
+                  leadership of Former Principal of Beverly Hills High School
+                  Dr. Dan Stepenosky, member of the School Board Dr. Myra
+                  Demeter, Beverly Hills High School Chemistry Teacher Charles
+                  Lee, and parent Eileen Kahn. Under their leadership, Team 1515
+                  grew to become a well-known team. Our team continued to
+                  flourish with the help of parent Eileen Kahn, who became a
+                  credentialed teacher to keep the program in existence. Thanks
+                  to the strong leadership and dedication of our teacher, John
+                  Castle, our team is moving full S.T.E.A.M ahead. With new
+                  student leadership, more efficient subdivisions, and fresh
+                  thinking, MorTorq is reaching for the stars. Currently, we
+                  have 42 students enrolled, along with many other affiliated
+                  with our robotics business team. In 2019, we had the honor to
+                  be awarded the prestigious Chairman's Award and traveled to
+                  the FRC International Competition with our registration fee
+                  sponsored by NASA. The 2022-2023 FIRST season will be our
+                  team’s ninteenth year competing.
+                </p>
+              </div>
+            </Row>
+          </article>
+        </main>
       </section>
       <h1 className="robotheading reveal">Our Robots</h1>
       <section className="robot-section reveal">
@@ -122,30 +126,31 @@ function ContainerFluid() {
       <h1 className="robotheading reveal">Previous Competitions</h1>
       <div className="hl reveal"></div>
       <section className="previous-comp reveal">
-        
-        
         <div className="info-card reveal">
-            <img src={ventura} alt="" className="info-image" />
+          <img src={ventura} alt="" className="info-image" />
           <div className="content">
             <h2 className="heading">FRC-Rapid React</h2>
             <h3 className="subheading">2022</h3>
             <p className="text">
-            In the 2022 season, our team participated in the LA and Ventura regionals and won up to quarter finals in both tournaments. Our team was also twice awarded imagery award.
-
-</p>
+              In the 2022 season, our team participated in the LA and Ventura
+              regionals and won up to quarter finals in both tournaments. Our
+              team was also twice awarded imagery award.
+            </p>
           </div>
         </div>
         <div className="info-card reveal">
-            <img src={gameChangers} alt="" className="info-image" />
+          <img src={gameChangers} alt="" className="info-image" />
           <div className="content">
             <h2 className="heading">FRC-Game Changers</h2>
             <h3 className="subheading">2021</h3>
             <p className="text">
-            For the 2021 season, our team competed in the three at home challenges offered by FIRST: Infinite Recharge at Home, Game Design Challenge, and Innovation Challenge.            </p>
+              For the 2021 season, our team competed in the three at home
+              challenges offered by FIRST: Infinite Recharge at Home, Game
+              Design Challenge, and Innovation Challenge.{" "}
+            </p>
           </div>
         </div>
-
-      </section> 
+      </section>
     </Container>
   );
 }
