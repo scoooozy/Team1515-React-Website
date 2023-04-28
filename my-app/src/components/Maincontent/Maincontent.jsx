@@ -26,7 +26,7 @@ window.addEventListener("scroll", reveal);
 function ContainerFluid() {
   return (
     <Container className="container">
-      <section className="teamhistory reveal">
+      <section className="teamhistory">
         <main>
           <article>
             <Row>
