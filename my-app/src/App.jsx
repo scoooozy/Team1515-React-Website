@@ -1,12 +1,15 @@
+import { Routes, Route } from "react-router-dom";
+import MainPage from "./components/MainPage/MainPage"
 import React from "react";
-import {React}
-
-import React from 'react'
 
 const App = () => {
   return (
-    <div>App</div>
-  )
-}
+    <div>
+      <Routes>
+        <Route element={<MainPage />} path="/" />
+      </Routes>
+    </div>
+  );
+};
 
-export default App
+export default App;
