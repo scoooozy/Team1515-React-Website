@@ -1,0 +1,132 @@
+.card{
+    color: var(--clr-neutral-100);
+    background-size: cover;
+    
+    padding: 10rem 0 0;
+    margin: 20px 0 30px;
+    max-width: 43ch;
+    border-radius: 0.5rem;
+    overflow: hidden;
+    transition: transform 500ms ease;
+}
+.card:nth-child(2)
+{
+    background-image: url("2020robot_highres.jpg");
+}
+.card:nth-child(3){
+    background-image: url("2019robot_highres.jpg");
+
+}
+.card:hover{
+    transform: scale(1.04);
+}
+
+.card-content{
+    --padding:1.8rem;
+    padding: var(--padding);
+    background: linear-gradient(
+        hsl(0 0% 0% /0),
+        hsl(0 0% 0%/ 0.4) 10%,
+        hsl(0 0% 0% /1)
+    ) ;
+    
+}
+
+
+.card-title{
+    font-size: 34px;
+    position: relative;
+    width: max-content;
+}
+
+.card-title::after{
+    content: "";
+    position: absolute;
+    height: 4px;
+    left: calc(var(--padding)*-1);
+    bottom: -3px;
+    width: calc(100% + var(--padding));
+    background: var(--clr-accent-400);
+    
+    transform-origin: left;
+    transition: transform 500ms ease;
+}
+.card:hover .card-title::after{
+    transform: scaleX(1);
+}
+.card-body{
+    color: rgb(255, 255, 255 / 0.8);
+}
+@media (hover){
+    .card-content{
+        transform: translateY(75%);
+        transition: transform 500ms ease-out;
+    }
+    .card:hover .card-content{
+        transform: translateY(0);
+        transition-delay: 200ms;
+    }
+    .card-content >  *:not(.card-title){
+        opacity: 0;
+        transition: opacity 500ms ease-in-out;
+    }
+    .card:hover .card-content >*:not(.card-title){
+        opacity:1;
+        transition-delay: 700ms;
+    }
+    .card-title::after{
+        transform: scaleX(0);
+    }
+}
+@media(prefers-reduced-motion:reduce){
+    *,
+    *::before,
+    *::after{
+        animation-duration: 0.1ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 1 !important;
+        scroll-behavior: auto !important;
+        transition-delay: 0ms !important;
+    }
+    .reveal{
+        transition: none;
+    }
+}
+
+.card-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    align-items: center;
+    align-content: center;
+    gap: 20px;
+}
+.heading{
+    color: white;
+}
+
+.content{
+    color: white;
+    text-align: center;
+}
+.text{
+    color: inherit;
+    padding: 1.5rem 2rem;
+}
+.reveal {
+    opacity: 0;
+    transition: all 1.5s;
+    transform: translateX(-100%);
+}
+.card.reveal{
+    transition-delay: 700ms;
+}
+.card:nth-child(2).reveal{
+    transition-delay: 400ms;
+    z-index: -1;
+}
+.card:nth-child(3).reveal{
+    transition-delay: 100ms;
+    z-index: -2;
+}
