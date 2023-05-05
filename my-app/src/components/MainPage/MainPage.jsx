@@ -9,7 +9,7 @@ import robot2019 from "./2019robot_highres.jpg";
 import Article from "../article/Article";
 import NavPage from "../Navbar/Navbar";
 import Header from "../Header/Header";
-
+import { useRef } from "react";
 function reveal() {
   let reveals = document.querySelectorAll(".reveal");
 
@@ -30,13 +30,16 @@ function reveal() {
 window.addEventListener("scroll", reveal);
 
 function Maincontent() {
+  const ref = useRef(null)
+
   return (
     <div>
       <NavPage/>
       <Header/>
-      <Container className="container">
+      <Container  className="container">
         <section className="teamhistory ">
           <Article
+          ref={ref}
             text="Our team competes in the FIRST robotics competition as Team
                   1515. Team 1515 was founded in the fall of 2004 under the
                   leadership of Former Principal of Beverly Hills High School

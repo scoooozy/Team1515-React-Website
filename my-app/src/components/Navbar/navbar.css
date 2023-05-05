@@ -9,6 +9,13 @@
   justify-content: space-between;
   padding: 0 100px;
 }
+.navbg{
+  background-color: transparent;
+}
+.links{
+  text-decoration: none;
+  color: black;
+}
 .logo {
   cursor: pointer;
   padding: 0 10px;

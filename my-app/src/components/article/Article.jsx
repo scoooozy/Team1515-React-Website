@@ -1,9 +1,9 @@
-import React from 'react'
+import React, { forwardRef } from 'react'
 import Row from "react-bootstrap/Row";
 
-const Article = (props) => {
+const Article = (props,ref) => {
   return (
-    <main>
+    <main ref={ref}>
           <article>
             <Row>
               <h2 className="H2" id="history">
@@ -28,4 +28,4 @@ const Article = (props) => {
   )
 }
 
-export default Article
+export default forwardRef(Article)
