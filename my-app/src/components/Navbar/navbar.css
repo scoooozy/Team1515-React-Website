@@ -10,11 +10,11 @@
   padding: 0 100px;
 }
 .navbg{
-  background-color: transparent;
+  background-color: black ;
 }
 .links{
   text-decoration: none;
-  color: black;
+  color: white;
 }
 .logo {
   cursor: pointer;
