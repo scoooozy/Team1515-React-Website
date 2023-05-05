@@ -11,11 +11,10 @@
 }
 .logo {
   cursor: pointer;
-
   padding: 0 10px;
 }
 .img {
- width: calc(70px + (45 - 25) * ((100vw - 300px) / (1300 - 300)));
+ width: calc(90px + (45 - 25) * ((100vw - 300px) / (1300 - 300)));
 }
 
 .hamburger {

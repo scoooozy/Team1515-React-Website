@@ -14,7 +14,7 @@ function NavPage() {
     <Navbar bg="light" expand="lg">
       <Container>
         <Navbar.Brand href="#home">
-          <img src={pic} alt="logo  " />
+          <img src={pic} alt="logo  " className="logo img"/>
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">

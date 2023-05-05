@@ -1,13 +1,15 @@
-import { Routes, Route } from "react-router-dom";
-import MainPage from "./components/MainPage/MainPage"
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Maincontent from "./components/Maincontent/Maincontent";
 import React from "react";
 
 const App = () => {
   return (
     <div>
-      <Routes>
-        <Route element={<MainPage />} path="/" />
-      </Routes>
+      <BrowserRouter>
+        <Routes>
+          <Route element={<Maincontent />} path="/" />
+        </Routes>
+      </BrowserRouter>
     </div>
   );
 };
