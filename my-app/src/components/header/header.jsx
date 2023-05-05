@@ -4,11 +4,8 @@ import "./header.css";
 
 
 
-function Header() {
-    const ref = useRef(null)
-    const handleScroll = () =>{
-        ref.current?.scrollIntoView({behavior: "smooth"})
-    }
+function Header(props) {
+
   return (
     <hero>
       <header class="header">
@@ -25,18 +22,7 @@ function Header() {
             Entrepreneurship by encouraging inclusion, leadership, ingenuity and
             teamwork.
           </p>
-
-          <a href="#scrollspyHeading1">
-            <button
-              href="#scrollspyHeading1"
-              class="btn btn-theme-color modal-toggle"
-              onClick={handleScroll}
-            >
-              <i class="ti-control-play text-danger"></i>
-                Learn More
-
-            </button>
-          </a>
+            {props.children}
         </div>
       </header>
     </hero>

@@ -30,16 +30,27 @@ function reveal() {
 window.addEventListener("scroll", reveal);
 
 function Maincontent() {
-  const ref = useRef(null)
-
+  const ref = useRef(null);
+  const handleScroll = () =>{
+      ref.current?.scrollIntoView({behavior: "smooth"})
+  }
   return (
     <div>
-      <NavPage/>
-      <Header/>
-      <Container  className="container">
+      <NavPage />
+      <Header>
+        <button
+          href="#scrollspyHeading1"
+          class="btn btn-theme-color modal-toggle"
+          onClick={handleScroll}
+        >
+          <i class="ti-control-play text-danger"></i>
+          Learn More
+        </button>
+      </Header>
+      <Container className="container">
         <section className="teamhistory ">
           <Article
-          ref={ref}
+            ref={ref}
             text="Our team competes in the FIRST robotics competition as Team
                   1515. Team 1515 was founded in the fall of 2004 under the
                   leadership of Former Principal of Beverly Hills High School
