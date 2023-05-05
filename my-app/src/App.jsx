@@ -1,5 +1,5 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Maincontent from "./components/Maincontent/Maincontent";
+import Maincontent from "./components/MainPage/MainPage";
 import React from "react";
 
 const App = () => {

@@ -8,6 +8,8 @@ import robot2022 from "./2022robot_highres.jpg";
 import robot2019 from "./2019robot_highres.jpg";
 import Article from "../article/Article";
 import NavPage from "../Navbar/Navbar";
+import Header from "../Header/Header";
+
 function reveal() {
   let reveals = document.querySelectorAll(".reveal");
 
@@ -31,6 +33,7 @@ function Maincontent() {
   return (
     <div>
       <NavPage/>
+      <Header/>
       <Container className="container">
         <section className="teamhistory ">
           <Article
