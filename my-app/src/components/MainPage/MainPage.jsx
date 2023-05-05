@@ -110,34 +110,7 @@ function Maincontent() {
             />
           </div>
         </section>
-        <h1 className="robotheading ">Previous Competitions</h1>
-        <div className="hl "></div>
-        <section className="previous-comp ">
-          <div className="info-card ">
-            <img src={ventura} alt="" className="info-image" />
-            <div className="content">
-              <h2 className="heading">FRC-Rapid React</h2>
-              <h3 className="subheading">2022</h3>
-              <p className="text">
-                In the 2022 season, our team participated in the LA and Ventura
-                regionals and won up to quarter finals in both tournaments. Our
-                team was also twice awarded imagery award.
-              </p>
-            </div>
-          </div>
-          <div className="info-card ">
-            <img src={gameChangers} alt="" className="info-image" />
-            <div className="content">
-              <h2 className="heading">FRC-Game Changers</h2>
-              <h3 className="subheading">2021</h3>
-              <p className="text">
-                For the 2021 season, our team competed in the three at home
-                challenges offered by FIRST: Infinite Recharge at Home, Game
-                Design Challenge, and Innovation Challenge.{" "}
-              </p>
-            </div>
-          </div>
-        </section>
+
       </Container>
     </div>
   );
