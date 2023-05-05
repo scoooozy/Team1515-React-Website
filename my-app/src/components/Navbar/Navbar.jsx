@@ -1,28 +1,20 @@
-
-
+import { Navbar, Nav } from 'react-bootstrap';
 import "./navbar.css"
-
 import pic from "../images/MorTorq.png"
 
-function Navbar() {
-    
+function nav() {
   return (
-    <header className="nav-header">
-          <div class="logo">
-              <img src={pic} alt="logo" className="img"/>
-    </div>
-    <nav class="nav-bar">
-        <ul>
-            <li><a href="http://localhost:3000/" class="active">Home</a></li>
-            <li><a href="http://localhost:3000/">About</a></li>
-            <li><a href="http://localhost:3000/">Sponsors</a></li>
-            <li><a href="http://localhost:3000/">Donate</a></li>
-
-        </ul>
-          </nav>
-      </header>
-      
-  )
+    <Navbar bg="dark" variant="dark">
+      <Nav className="mr-auto">
+      <Nav className="ml-auto align-items-center">
+        <Nav.Link href="#" className="rhombus orange-bg">Home</Nav.Link>
+        <Nav.Link href="#" className="rhombus orange-bg">About</Nav.Link>
+        <Nav.Link href="#" className="rhombus orange-dark-bg">Sponsors</Nav.Link>
+        <Nav.Link href="#" className="rhombus">Donate</Nav.Link>
+      </Nav>
+      </Nav>
+    </Navbar>
+  );
 }
 
-export default Navbar;
+export default nav;
