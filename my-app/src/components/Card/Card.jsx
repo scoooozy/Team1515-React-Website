@@ -5,7 +5,7 @@ const Card = (props) => {
     <div>
       {" "}
       <div
-        class="card reveal"
+        class="card "
         style={{
           backgroundImage: `url(${props.bg})`,
         }}
