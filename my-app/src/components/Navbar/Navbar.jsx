@@ -17,7 +17,7 @@ function NavPage() {
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
-            <Nav className="me-auto">
+            <Nav className="me-auto navContainer">
               <Nav.Link href="#home">
                 {" "}
                 <Link className="links" to="/">
