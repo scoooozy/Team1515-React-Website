@@ -13,6 +13,14 @@
   display: flex;
 }
 
+
+.navbar-collapse {
+  flex-grow: 0 !important;
+}
+#nav-dropdown-dark-example{
+  color: white;
+
+}
 .links{
   text-decoration: none;
   color: white;

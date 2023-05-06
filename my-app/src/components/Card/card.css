@@ -106,9 +106,11 @@
     color: inherit;
     padding: 1.5rem 2rem;
 }
-.reveal {
-    opacity: 0;
-    transition: all 1.5s;
-    transform: translateX(-100%);
 
+
+.card:nth-child(2){
+    transition-delay: 0.5s;
+}
+.card:nth-child(3){
+    transition-delay: 0.5s;
 }

@@ -6,7 +6,15 @@
   }
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200&family=Open+Sans:wght@300&display=swap');
 
-
+.card-container> .reveal:nth-child(1){
+    transition-delay: 0.75s;
+}
+.card-container> .reveal:nth-child(2){
+    transition-delay: 0.5s;
+}
+.card-container> .reveal:nth-child(3){
+    transition-delay: 0.25s;
+}
 .list {
     display: flex;
     justify-content: center;
@@ -126,26 +134,8 @@
     color: inherit;
     padding: 1.5rem 2rem;
 }
-.reveal {
-    opacity: 0;
-    transition: all 1.5s;
-    transform: translateX(-100%);
-}
-.card.reveal{
-    transition-delay: 700ms;
-}
-.card:nth-child(2).reveal{
-    transition-delay: 400ms;
-    z-index: -1;
-}
-.card:nth-child(3).reveal{
-    transition-delay: 100ms;
-    z-index: -2;
-}
-.active{
-    opacity: 1;
-    transform: translate(0);
-}
+
+
 .robot-section{
     display: flex;
     padding: 20px 0;

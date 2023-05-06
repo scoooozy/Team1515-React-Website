@@ -11,13 +11,13 @@ function NavPage() {
   return (
     <div>
       <Navbar expand="lg"  bg="dark" variant="dark" className="navbg">
-        <Container>
+        <Container className="navContent">
           <Navbar.Brand href="#home">
             <img src={pic} alt="logo  " className="logo img" />
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
-            <Nav className="me-auto navContainer">
+            <Nav className="me-auto">
               <Nav.Link href="#home">
                 {" "}
                 <Link className="links" to="/">

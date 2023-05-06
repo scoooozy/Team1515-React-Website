@@ -9,31 +9,14 @@ import robot2019 from "./2019robot_highres.jpg";
 import Article from "../article/Article";
 import NavPage from "../Navbar/Navbar";
 import Header from "../Header/Header";
+import Reveal from "../RevealComponent/Reveal";
 import { useRef } from "react";
-function reveal() {
-  let reveals = document.querySelectorAll(".reveal");
-
-  for (let i = 0; i < reveals.length; i++) {
-    let windowHeight = window.innerHeight;
-    let elementTop = reveals[i].getBoundingClientRect().top;
-    let elementVisible = 100;
-
-    if (elementTop < windowHeight - elementVisible) {
-      reveals[i].classList.add("active");
-    }
-    // else {
-    //   reveals[i].classList.remove("active");
-    // }
-  }
-}
-
-window.addEventListener("scroll", reveal);
 
 function Maincontent() {
   const ref = useRef(null);
-  const handleScroll = () =>{
-      ref.current?.scrollIntoView({behavior: "smooth"})
-  }
+  const handleScroll = () => {
+    ref.current?.scrollIntoView({ behavior: "smooth" });
+  };
   return (
     <div>
       <NavPage />
@@ -49,9 +32,10 @@ function Maincontent() {
       </Header>
       <Container className="container">
         <section className="teamhistory ">
-          <Article
-            ref={ref}
-            text="Our team competes in the FIRST robotics competition as Team
+          <Reveal viewprop="170">
+            <Article
+              ref={ref}
+              text="Our team competes in the FIRST robotics competition as Team
                   1515. Team 1515 was founded in the fall of 2004 under the
                   leadership of Former Principal of Beverly Hills High School
                   Dr. Dan Stepenosky, member of the School Board Dr. Myra
@@ -70,47 +54,51 @@ function Maincontent() {
                   the FRC International Competition with our registration fee
                   sponsored by NASA. The 2022-2023 FIRST season will be our
                   team’s ninteenth year competing."
-            heading="Team History "
-          />
+              heading="Team History "
+            />
+          </Reveal>
         </section>
         <h1 className="robotheading ">Our Robots</h1>
         <section className="robot-section ">
           <div className="hlr "></div>
+
           <div className="card-container ">
-            <Card
-              title="Rapid React"
-              text=" In the 2022 season, our team participated in the LA and Ventura
+            <Reveal viewprop="190">
+              <Card
+                title="Rapid React"
+                text=" In the 2022 season, our team participated in the LA and Ventura
                 regionals and won up to quarter finals in both tournaments. We
                 were twice awarded the FRC Imagery Award for outstanding
                 attractiveness in our engineering and visual aesthetic of both
                 our robot and team appearance."
-              year="2022"
-              bg={robot2022}
-              className="reveal"
-            />
-            <Card
-              text="Our 2020 robot had a revolver type magazine, a feature that
+                year="2022"
+                bg={robot2022}
+              />
+            </Reveal>
+            <Reveal viewprop="190">
+              <Card
+                text="Our 2020 robot had a revolver type magazine, a feature that
                 allowed us to carry five balls at a time. The robot could intake
                 balls, place them into the magazine, and then used a solenoid to
                 direct the ball into the two wheel shooter. It also had a
                 climber mechanism that utilized a hook. The swerve drivetrain
                 allowed us to move rapidly and avoid obstacles on the field."
-              bg={robot2020}
-              title="Infinite Recharge"
-              year="2020"
-              className="reveal"
-            />
-            <Card
-              text="In 2019, our team competed at the Ventura Regional, the LA
+                bg={robot2020}
+                title="Infinite Recharge"
+                year="2020"
+              />
+            </Reveal>
+            <Reveal viewprop="190">
+              <Card
+                text="In 2019, our team competed at the Ventura Regional, the LA
                 Regional, and won the Chairmans Award."
-              year="2019"
-              title="Destination Deepspace"
-              bg={robot2019}
-              className="reveal"
-            />
+                year="2019"
+                title="Destination Deepspace"
+                bg={robot2019}
+              />
+            </Reveal>
           </div>
         </section>
-
       </Container>
     </div>
   );

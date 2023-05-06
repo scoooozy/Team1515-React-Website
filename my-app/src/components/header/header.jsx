@@ -1,4 +1,4 @@
-import { useRef } from "react";
+
 import "./header.css";
 
 
@@ -7,7 +7,7 @@ import "./header.css";
 function Header(props) {
 
   return (
-    <hero>
+    <div>
       <header class="header">
         <div class="overlay"></div>
         <div class="header-content">
@@ -25,7 +25,8 @@ function Header(props) {
             {props.children}
         </div>
       </header>
-    </hero>
+    </div>
+
   );
 }
 
