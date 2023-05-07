@@ -17,7 +17,7 @@ function NavPage() {
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
-            <Nav className="me-auto">
+            <Nav className="me-auto alignnav">
               <Nav.Link href="#home">
                 {" "}
                 <Link className="links" to="/">
@@ -30,14 +30,14 @@ function NavPage() {
                 menuVariant="dark"
                 className="links"
               >
-                <NavDropdown.Item href="#action/3.1" className="links">
+                <NavDropdown.Item href="#action/3.1" className="droplinks">
                   Our Leaders
                 </NavDropdown.Item>
-                <NavDropdown.Item href="#action/3.2" className="links">
+                <NavDropdown.Item href="#action/3.2" className="droplinks">
                   Outreach
                 </NavDropdown.Item>
                 <NavDropdown.Divider />
-                <NavDropdown.Item href="#action/3.3" className="links">
+                <NavDropdown.Item href="#action/3.3" className="droplinks">
                   Sponsors
                 </NavDropdown.Item>
               </NavDropdown>

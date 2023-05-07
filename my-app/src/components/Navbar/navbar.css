@@ -9,28 +9,45 @@
   justify-content: space-between;
   padding: 0 100px;
 }
-.navbg{
+.navbg {
   display: flex;
+  height: 70px;
+  padding: 0 20px;
+}
+.alignnav{
+  display: flex;
+  align-items: center; 
 }
 
-
+.navbar > .container {
+  justify-content: space-around;
+  display: flex;
+  align-items: center;
+}
 .navbar-collapse {
   flex-grow: 0 !important;
 }
-#nav-dropdown-dark-example{
+#nav-dropdown-dark-example {
   color: white;
+  font-size: calc(12px + (15 - 12) * ((100vw - 300px) / (1300 - 300)));
 
 }
-.links{
+.droplinks{
+  color: white;
+  font-size: calc(12px + (15 - 12) * ((100vw - 300px) / (1300 - 300)));
+}
+.links {
   text-decoration: none;
   color: white;
+  font-size: calc(14px + (15 - 12) * ((100vw - 300px) / (1300 - 300)));
+  margin: 0 20px;
 }
 .logo {
   cursor: pointer;
   padding: 0 10px;
 }
 .img {
- width: calc(90px + (45 - 25) * ((100vw - 300px) / (1300 - 300)));
+  width: calc(90px + (45 - 25) * ((100vw - 300px) / (1300 - 300)));
 }
 
 .hamburger {
@@ -39,13 +56,12 @@
 .nav-bar ul {
   display: flex;
   margin: 0;
-  
 }
 .nav-bar ul li a {
   display: block;
   font-size: 18px;
   color: rgb(231, 215, 215);
-  padding: 10px 25px ;
+  padding: 10px 25px;
   border-radius: 50px;
   transition: 0.2s;
   margin: 0 5px;
@@ -65,13 +81,12 @@
   }
 }
 @media only screen and (max-width: 1100px) {
-    header {
-      padding: 0 30px;
-    }
+  header {
+    padding: 0 30px;
   }
-  @media only screen and (max-width: 900px) {
-    header {
-      padding: 0 20px;
-    }
+}
+@media only screen and (max-width: 900px) {
+  header {
+    padding: 0 20px;
   }
-  
+}

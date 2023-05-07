@@ -58,9 +58,14 @@ function Maincontent() {
             />
           </Reveal>
         </section>
-        <h1 className="robotheading ">Our Robots</h1>
+        <Reveal viewprop="210">
+          <h1 className="robotheading ">Our Robots</h1>
+        </Reveal>
+
         <section className="robot-section ">
-          <div className="hlr "></div>
+          <Reveal viewprop="210">
+            <div className="hlr "></div>
+          </Reveal>
 
           <div className="card-container ">
             <Reveal viewprop="190">
