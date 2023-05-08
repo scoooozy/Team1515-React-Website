@@ -5,16 +5,20 @@
   display: flex;
   height: 100%;
   padding: 10px 20px;
-  background: rgb(14,14,14);
-  background: linear-gradient(74deg, rgba(14,14,14,1) 0%, rgba(22,22,22,1) 48%, rgba(66,66,66,1) 100%);
-
+  background: rgb(14, 14, 14);
+  background: linear-gradient(
+    74deg,
+    rgba(14, 14, 14, 1) 0%,
+    rgba(22, 22, 22, 1) 43%,
+    rgba(36, 36, 36, 1) 100%
+  );
 }
-.dropdown-menu-dark{
+.dropdown-menu-dark {
   background-color: #161616;
 }
-.alignnav{
+.alignnav {
   display: flex;
-  align-items: center; 
+  align-items: center;
 }
 
 .navbar > .container {
@@ -29,7 +33,7 @@
   color: white;
   font-size: calc(12px + (15 - 12) * ((100vw - 300px) / (1300 - 300)));
 }
-.droplinks{
+.droplinks {
   color: white;
   font-size: calc(12px + (15 - 12) * ((100vw - 300px) / (1300 - 300)));
 }
