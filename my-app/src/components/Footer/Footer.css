@@ -26,3 +26,10 @@
     background-color: rgba(23, 22, 22, 0.934);
 
 }
+.footer-info > *{
+    color: white;
+}
+.footer-info > a:hover{
+    color: white;
+    text-decoration: none;
+}

@@ -7,7 +7,7 @@ import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import NavDropdown from "react-bootstrap/NavDropdown";
 
-function NavPage() {
+function NavPage(props) {
   return (
     <div>
       <Navbar expand="lg"  bg="dark" variant="dark" className="navbg">

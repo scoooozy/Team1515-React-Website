@@ -12,7 +12,6 @@
 .navbg {
   display: flex;
   height: 100%;
-  
   padding: 10px 20px;
   background: rgb(14,14,14);
   background: linear-gradient(74deg, rgba(14,14,14,1) 0%, rgba(22,22,22,1) 48%, rgba(66,66,66,1) 100%);

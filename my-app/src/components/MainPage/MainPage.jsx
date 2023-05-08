@@ -10,6 +10,7 @@ import Article from "../article/Article";
 import NavPage from "../Navbar/Navbar";
 import Header from "../Header/Header";
 import Reveal from "../RevealComponent/Reveal";
+import Footer from "../Footer/Footer"
 import { useRef } from "react";
 
 function Maincontent() {
@@ -105,6 +106,7 @@ function Maincontent() {
           </div>
         </section>
       </Container>
+      <Footer/>
     </div>
   );
 }
