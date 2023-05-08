@@ -1,14 +1,14 @@
-
 import "./header.css";
 
-
-
-
 function Header(props) {
-
   return (
     <div>
-      <header class="header">
+      <header
+        class="header"
+        style={{
+          backgroundImage: `url(${props.bg})`,
+        }}
+      >
         <div class="overlay"></div>
         <div class="header-content">
           <h1 class="header-title animate__animated animate__fadeIn">
@@ -17,16 +17,11 @@ function Header(props) {
               TORQ
             </span>
           </h1>
-          <p class="header-subtitle fade-in">
-            Striving to inspire future generations to pursue careers in STEM and
-            Entrepreneurship by encouraging inclusion, leadership, ingenuity and
-            teamwork.
-          </p>
-            {props.children}
+
+          {props.children}
         </div>
       </header>
     </div>
-
   );
 }
 

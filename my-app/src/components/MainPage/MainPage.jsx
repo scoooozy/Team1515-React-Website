@@ -3,6 +3,7 @@ import "./Maincontent.css";
 import ventura from "../images/ventura.jpg";
 import gameChangers from "../images/gameChangers.jpg";
 import Card from "../Card/Card";
+import hbg from "./chazzwithaheart.png"
 import robot2020 from "./2020robot_highres.jpg";
 import robot2022 from "./2022robot_highres.jpg";
 import robot2019 from "./2019robot_highres.jpg";
@@ -10,7 +11,7 @@ import Article from "../article/Article";
 import NavPage from "../Navbar/Navbar";
 import Header from "../Header/Header";
 import Reveal from "../RevealComponent/Reveal";
-import Footer from "../Footer/Footer"
+import Footer from "../Footer/Footer";
 import { useRef } from "react";
 
 function Maincontent() {
@@ -21,7 +22,12 @@ function Maincontent() {
   return (
     <div>
       <NavPage />
-      <Header>
+      <Header bg={hbg}>
+        <p class="header-subtitle fade-in">
+          Striving to inspire future generations to pursue careers in STEM and
+          Entrepreneurship by encouraging inclusion, leadership, ingenuity and
+          teamwork.
+        </p>
         <button
           href="#scrollspyHeading1"
           class="btn btn-theme-color modal-toggle"
@@ -106,7 +112,7 @@ function Maincontent() {
           </div>
         </section>
       </Container>
-      <Footer/>
+      <Footer />
     </div>
   );
 }
