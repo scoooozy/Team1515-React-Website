@@ -1,14 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap");
 
-.nav-header {
-  width: 100%;
-  height: 90px;
-  background-color: #11101b;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 0 100px;
-}
+/* overriding bootstraps classes */
 .navbg {
   display: flex;
   height: 100%;
@@ -16,6 +8,9 @@
   background: rgb(14,14,14);
   background: linear-gradient(74deg, rgba(14,14,14,1) 0%, rgba(22,22,22,1) 48%, rgba(66,66,66,1) 100%);
 
+}
+.dropdown-menu-dark{
+  background-color: #161616;
 }
 .alignnav{
   display: flex;
@@ -33,12 +28,12 @@
 #nav-dropdown-dark-example {
   color: white;
   font-size: calc(12px + (15 - 12) * ((100vw - 300px) / (1300 - 300)));
-
 }
 .droplinks{
   color: white;
   font-size: calc(12px + (15 - 12) * ((100vw - 300px) / (1300 - 300)));
 }
+/* end of overriden classes */
 .links {
   text-decoration: none;
   color: white;
