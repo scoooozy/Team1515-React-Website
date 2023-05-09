@@ -1,6 +1,7 @@
 import "./navbar.css";
 
 import pic from "../images/MorTorq.png";
+import picture from "../images/navpic.png"
 import { Outlet, Link } from "react-router-dom";
 import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
@@ -13,7 +14,7 @@ function NavPage(props) {
       <Navbar expand="lg" bg="dark" variant="dark" className="navbg">
         <Container className="navContent">
           <Navbar.Brand href="#home">
-            <img src={pic} alt="logo  " className="logo img" />
+            <img src={picture} alt="logo  " className="logo img" />
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
