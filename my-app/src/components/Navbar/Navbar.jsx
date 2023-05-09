@@ -10,7 +10,7 @@ import NavDropdown from "react-bootstrap/NavDropdown";
 function NavPage(props) {
   return (
     <div>
-      <Navbar expand="lg"  bg="dark" variant="dark" className="navbg">
+      <Navbar expand="lg" bg="dark" variant="dark" className="navbg">
         <Container className="navContent">
           <Navbar.Brand href="#home">
             <img src={pic} alt="logo  " className="logo img" />
@@ -31,14 +31,20 @@ function NavPage(props) {
                 className="links"
               >
                 <NavDropdown.Item href="#action/3.1" className="droplinks">
-                  Our Leaders
+                  <Link className="droplinks" to="/Leaders">
+                    Our Leaders
+                  </Link>
                 </NavDropdown.Item>
                 <NavDropdown.Item href="#action/3.2" className="droplinks">
-                  Outreach
+                  <Link className="droplinks" to="/Outreach">
+                    Outreach
+                  </Link>
                 </NavDropdown.Item>
                 <NavDropdown.Divider />
                 <NavDropdown.Item href="#action/3.3" className="droplinks">
-                  Sponsors
+                  <Link className="droplinks" to="/Sponsor">
+                    Sponsor
+                  </Link>
                 </NavDropdown.Item>
               </NavDropdown>
               <Nav.Link href="#link" className="links">

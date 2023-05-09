@@ -7,7 +7,7 @@ import hbg from "./chazzwithaheart.png"
 import robot2020 from "./2020robot_highres.jpg";
 import robot2022 from "./2022robot_highres.jpg";
 import robot2019 from "./2019robot_highres.jpg";
-import Article from "../article/Article";
+import Article from "../Article/Article";
 import NavPage from "../Navbar/Navbar";
 import Header from "../Header/Header";
 import Reveal from "../RevealComponent/Reveal";

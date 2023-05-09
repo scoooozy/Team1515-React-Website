@@ -31,19 +31,24 @@
 }
 #nav-dropdown-dark-example {
   color: white;
-  font-size: calc(12px + (15 - 12) * ((100vw - 300px) / (1300 - 300)));
+  font-size: calc(14px + (15 - 12) * ((100vw - 300px) / (1300 - 300)));
 }
 .droplinks {
   color: white;
-  font-size: calc(12px + (15 - 12) * ((100vw - 300px) / (1300 - 300)));
+  font-size: calc(14px + (15 - 12) * ((100vw - 300px) / (1300 - 300)));
+  text-decoration: none;
 }
-/* end of overriden classes */
+a {
+  text-decoration: none;
+}
 .links {
   text-decoration: none;
   color: white;
   font-size: calc(14px + (15 - 12) * ((100vw - 300px) / (1300 - 300)));
   margin: 0 20px;
-}
+} 
+/* end of overriden classes */
+
 .logo {
   cursor: pointer;
   padding: 0 10px;
