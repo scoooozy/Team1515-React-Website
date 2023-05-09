@@ -9,9 +9,9 @@ import robot2022 from "./2022robot_highres.jpg";
 import robot2019 from "./2019robot_highres.jpg";
 import Article from "../Article/Article";
 import NavPage from "../Navbar/Navbar";
-import Header from "../header/header";
 import Reveal from "../RevealComponent/Reveal";
 import Footer from "../Footer/Footer";
+import Header from "../Header/Header"
 import { useRef } from "react";
 
 function Maincontent() {
