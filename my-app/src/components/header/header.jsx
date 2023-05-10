@@ -13,7 +13,7 @@ function Header(props) {
         <div class="header-content">
           <h1 class="header-title animate__animated animate__fadeIn">
             MOR
-            <span style={{ color: "#FF5F00" }} class="">
+              <span style={{ color: "#FF5F00" }} class="">
               TORQ
             </span>
           </h1>
