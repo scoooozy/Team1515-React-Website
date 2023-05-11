@@ -1,18 +1,20 @@
 import React from "react";
 import "./Card.css";
 import "./animation.css";
+import Button from 'react-bootstrap/Button';
+
 
 const Card = ({ onClick, bg, name, position, description }) => {
   return (
     <div className="person-card">
       <div className="card-back">
         <div className="person-card-container">
-            <h5>{name}</h5>
-            <h6>{position}</h6>
-            <p>{description}</p>
-        
+          <h4>{name}</h4>
+          <h5>{position}</h5>
+          <p>{description}</p>
+          <Button variant="outline-dark" className="button"onClick={onClick}>Dark</Button>
+
         </div>
-        <button onClick={onClick}>Back</button>
       </div>
       <div
         className="card-front"
@@ -22,10 +24,11 @@ const Card = ({ onClick, bg, name, position, description }) => {
       >
         <div className="card-info">
           <div>
-            <h5>{name}</h5>
-            <h6>{position}</h6>
+            <h4>{name}</h4>
+            <h5>{position}</h5>
           </div>
-          <button onClick={onClick}>Learn More</button>
+          <Button variant="outline-light" onClick={onClick}>Light</Button>
+
         </div>
       </div>
     </div>
