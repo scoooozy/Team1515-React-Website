@@ -8,7 +8,7 @@ const LeadersPage = (props) => {
   return (
     <div>
         <NavPage/>
-        <Header>
+        <Header wText="OUR " oText="TEAM">
 
         </Header>
     </div>

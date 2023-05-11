@@ -12,10 +12,7 @@ function Header(props) {
         <div class="overlay"></div>
         <div class="header-content">
           <h1 class="header-title animate__animated animate__fadeIn">
-            MOR
-              <span style={{ color: "#FF5F00" }} class="">
-              TORQ
-            </span>
+            {props.wText}<span style={{ color: "#FF5F00" }} class="">{props.oText}</span>
           </h1>
 
           {props.children}

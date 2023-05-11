@@ -11,7 +11,7 @@ import Article from "../Article/Article";
 import NavPage from "../Navbar/Navbar";
 import Reveal from "../RevealComponent/Reveal";
 import Footer from "../Footer/Footer";
-import Header from "../Header/Header"
+import Header from "../Header/Header";
 import { useRef } from "react";
 
 function Maincontent() {
@@ -22,7 +22,7 @@ function Maincontent() {
   return (
     <div>
       <NavPage />
-      <Header bg={hbg}>
+      <Header bg={hbg} wText="MOR"oText="TORQ">
         <p class="header-subtitle fade-in">
           Striving to inspire future generations to pursue careers in STEM and
           Entrepreneurship by encouraging inclusion, leadership, ingenuity and
