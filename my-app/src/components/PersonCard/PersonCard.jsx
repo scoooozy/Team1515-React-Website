@@ -4,7 +4,7 @@ import Card from "./Card/Card";
 import { CSSTransition } from "react-transition-group";
 import { useState } from "react";
 
-const PersonCard = ({ bg }) => {
+const PersonCard = ({ bg, name, position, description }) => {
   const [showFront, setShowFront] = useState(true);
   return (
     <div className="flipable-card-container">
@@ -14,7 +14,10 @@ const PersonCard = ({ bg }) => {
             setShowFront((v) => !v);
           }}
           bg={bg}
-        />
+          name={name}
+          position={position}
+          description={description}
+          />
       </CSSTransition>
     </div>
   );

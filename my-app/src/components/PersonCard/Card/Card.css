@@ -3,9 +3,10 @@
   width: 100%;
   position: relative;
   transform-style: preserve-3d;
-  border-radius: 3px;
-  border: 5px solid gray;
+  border-radius: 5px;
+  border: 5px solid black;
   box-shadow: 0px 0px 15 rgba(0, 0, 0, 0.8);
+
 }
 .card-back,
 .card-front {
@@ -17,7 +18,7 @@
   justify-content: center;
   align-items: center;
   font-family: Montserrat;
-  font-size: 30px;
+  font-size: 22px;
   color: white;
   flex-direction: column;
 }
@@ -29,4 +30,9 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+
+.card-info{
+display: flex;
 }
