@@ -16,6 +16,7 @@ import Arielle from "./ariella_1500x1000.jpg";
 import Castle from "./castle_1500x1000.png";
 import LeadersBG from "./leadership.jpg"
 import { useRef } from "react";
+import Footer from "../Footer/Footer";
 const LeadersPage = (props) => {
   const ref = useRef(null);
   const handleScroll = () => {
@@ -29,10 +30,10 @@ const LeadersPage = (props) => {
           className="scroll-btn"
           onClick={handleScroll}
         >
-          Scroll Down
+          Learn More
         </button>
       </Header>
-      <Container>
+      <Container className="leader-card-container">
         <Row>
           <PersonCard
             ref={ref}
@@ -85,10 +86,11 @@ const LeadersPage = (props) => {
             bg={Castle}
             name="John R. Castle II"
             position="Robotics Teacher"
-            description="Hello! I am one of the science and engineering teachers here at Beverly Hills High School. I have been a teacher at Beverly Hills High since 2017. I completed my education at Portland State University in Portland Oregon. I majored in Organismal Biology (pre-med track and obtained a Master's of Education with a dual endorsement for Biology and Special Education. I have been teaching since 2009. This year I will be teaching Biology, Introduction to Engineering Design, and Robotics."
+            description="Hello! I am one of the science and engineering teachers here at Beverly Hills High School. I have been a teacher at Beverly Hills High since 2017. I completed my education at Portland State University in Portland Oregon. I majored in Organismal Biology (pre-med track) and obtained a Master's of Education with a dual endorsement for Biology and Special Education. I have been teaching since 2009. This year I will be teaching Biology, Introduction to Engineering Design, and Robotics."
           />{" "}
         </Row>
       </Container>
+      <Footer/>
     </div>
   );
 };
