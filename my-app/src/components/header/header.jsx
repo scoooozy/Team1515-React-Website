@@ -7,6 +7,7 @@ function Header(props) {
         class="header"
         style={{
           backgroundImage: `url(${props.bg})`,
+          minHeight: `${props.min}px`,
         }}
       >
         <div class="overlay"></div>

@@ -3,8 +3,6 @@
   width: 100%;
   position: relative;
   transform-style: preserve-3d;
-  border-radius: 5px;
-  border: 5px solid black;
   box-shadow: 0px 0px 15 rgba(0, 0, 0, 0.8);
   margin: 20px 10px;
 }
@@ -15,9 +13,7 @@
   position: absolute;
   backface-visibility: hidden;
   font-family: Montserrat;
-  font-size: 22px;
   color: white;
-  
 }
 .card-back {
   color: rgb(40, 14, 14);
@@ -27,6 +23,9 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  border: solid black 3px;
+  border-radius: 10px;
+
 }
 .card-front {
   display: flex;
@@ -37,14 +36,16 @@
   background-repeat: no-repeat;
   background-size: cover;
   justify-content: flex-end;
-}
-
-
-.card-info{
-display: flex; 
+  border-radius: 10px;
 
 }
-.person-card-container{
+
+.card-info {
+  display: flex;
+  width: 100%;
+
+}
+.person-card-container {
   display: flex;
   text-align: center;
 
@@ -52,6 +53,41 @@ display: flex;
   flex-direction: column;
   align-items: center;
 }
-.button{
-  width: 100px;
+
+.front-info {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  padding: 24px 15px;
+  background: linear-gradient( hsl(0 0% 0% /0), hsl(0 0% 0%/ 0.2) 40%, hsl(0 0% 0% /1) );
+  height: 100%;
+  min-height: 500px;
+  align-items: flex-end;
+  border-radius: 10px;
+
+}
+button{
+  background-color: transparent;
+  border: none;
+}
+.learnLess-btn{
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 22px 10px;
+}
+.learnMore-btn{
+  background-color: transparent;
+  border: none;
+  color: white;
+  text-align: center;
+  font-size: 30px;
+  margin: 13px 0;
+}
+p{
+  font-size: 16px;
+}
+.row{
+  justify-content: center;
 }

@@ -1,13 +1,13 @@
-import React from "react";
+import React, {forwardRef } from "react";
 import "./PersonCard.css";
 import Card from "./Card/Card";
 import { CSSTransition } from "react-transition-group";
 import { useState } from "react";
 
-const PersonCard = ({ bg, name, position, description }) => {
+const PersonCard = ({ bg, name, position, description },ref) => {
   const [showFront, setShowFront] = useState(true);
   return (
-    <div className="flipable-card-container">
+    <div className="flipable-card-container" ref={ref}>
       <CSSTransition in={showFront} timeout={300} classNames="flip">
         <Card
           onClick={() => {
@@ -23,4 +23,4 @@ const PersonCard = ({ bg, name, position, description }) => {
   );
 };
 
-export default PersonCard;
+export default forwardRef(PersonCard);
