@@ -14,7 +14,8 @@ import Odelia from "./odelia_1500x1000.jpg";
 import Rachel from "./rachel_1500x1000.jpg";
 import Arielle from "./ariella_1500x1000.jpg";
 import Castle from "./castle_1500x1000.png";
-import LeadersBG from "./leadership.jpg"
+import LeadersBG from "./leadership.jpg";
+import Footer from "../Footer/Footer";
 import { useRef } from "react";
 const LeadersPage = (props) => {
   const ref = useRef(null);
@@ -25,14 +26,18 @@ const LeadersPage = (props) => {
     <div>
       <NavPage />
       <Header wText="OUR " oText="LEADERS" min="800" bg={LeadersBG}>
-        <button
-          className="scroll-btn"
-          onClick={handleScroll}
-        >
+        <p class="header-subtitle fade-in">
+          The most experienced and advanced members our robotics team has to
+          offer, these are the leaders of the Mortorq 1515 Robotics team. Each
+          member has been hand-picked and are all deeply qualified for their
+          positions, and each display excellent leadership, skill in their field
+          of expertise, and dedication to robotics.
+        </p>
+        <button className="scroll-btn" onClick={handleScroll}>
           Scroll Down
         </button>
       </Header>
-      <Container>
+      <Container className="people-cards-container">
         <Row>
           <PersonCard
             ref={ref}
@@ -74,7 +79,7 @@ const LeadersPage = (props) => {
             description="I am a sophomore and the Safety Captain of team 1515, and this is my second year in robotics. As Safety Captain, I create and enforce protocolsto ensure that the team is safe at all times. Safety is an absolute necessity and priority, and I hope to share my passion for FRC with anyone interested in educating themselves on how to further protect their team. I am also committed to encouraging more girls into joining FRC."
           />{" "}
         </Row>
-        <Row >
+        <Row>
           <PersonCard
             bg={Rachel}
             name="Rachel Cohen"
@@ -89,6 +94,7 @@ const LeadersPage = (props) => {
           />{" "}
         </Row>
       </Container>
+      <Footer />
     </div>
   );
 };
