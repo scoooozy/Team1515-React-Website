@@ -17,6 +17,7 @@ import Castle from "./castle_1500x1000.png";
 import LeadersBG from "./leadership.jpg";
 import Footer from "../Footer/Footer";
 import { useRef } from "react";
+import Footer from "../Footer/Footer";
 const LeadersPage = (props) => {
   const ref = useRef(null);
   const handleScroll = () => {
@@ -26,18 +27,14 @@ const LeadersPage = (props) => {
     <div>
       <NavPage />
       <Header wText="OUR " oText="LEADERS" min="800" bg={LeadersBG}>
-        <p class="header-subtitle fade-in">
-          The most experienced and advanced members our robotics team has to
-          offer, these are the leaders of the Mortorq 1515 Robotics team. Each
-          member has been hand-picked and are all deeply qualified for their
-          positions, and each display excellent leadership, skill in their field
-          of expertise, and dedication to robotics.
-        </p>
-        <button className="scroll-btn" onClick={handleScroll}>
+        <button
+          className="scroll-btn"
+          onClick={handleScroll}
+        >
           Scroll Down
         </button>
       </Header>
-      <Container className="people-cards-container">
+      <Container>
         <Row>
           <PersonCard
             ref={ref}
@@ -90,11 +87,10 @@ const LeadersPage = (props) => {
             bg={Castle}
             name="John R. Castle II"
             position="Robotics Teacher"
-            description="Hello! I am one of the science and engineering teachers here at Beverly Hills High School. I have been a teacher at Beverly Hills High since 2017. I completed my education at Portland State University in Portland Oregon. I majored in Organismal Biology (pre-med track and obtained a Master's of Education with a dual endorsement for Biology and Special Education. I have been teaching since 2009. This year I will be teaching Biology, Introduction to Engineering Design, and Robotics."
+            description="Hello! I am one of the science and engineering teachers here at Beverly Hills High School. I have been a teacher at Beverly Hills High since 2017. I completed my education at Portland State University in Portland Oregon. I majored in Organismal Biology (pre-med track) and obtained a Master's of Education with a dual endorsement for Biology and Special Education. I have been teaching since 2009. This year I will be teaching Biology, Introduction to Engineering Design, and Robotics."
           />{" "}
         </Row>
       </Container>
-      <Footer />
     </div>
   );
 };
