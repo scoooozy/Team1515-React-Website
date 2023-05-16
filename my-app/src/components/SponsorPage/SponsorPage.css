@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+.bg-sponsors {
+    background-image: linear-gradient(to bottom,rgba(16, 15, 15, 0.3),rgb(16, 15, 15,1)),url('./Crowd.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    min-height: 70vh;
+    box-shadow: none !important;
+}
+
+.black {
+    background-color: rgb(16, 15, 15);
+    min-height: 100vh;
+}
+  
+.sptext {
+    padding-top: 40vh;
+    font-family: 'Montserrat';
+    font-weight: 700;
+    font-size: calc(1.375rem + 3vw);
+}
+
+.sptext-sub {
+    font-family: 'Montserrat';
+    color: rgb(255, 95, 0);
+    font-weight: 700;
+    font-size: calc(1.375rem + 1vw);
+}

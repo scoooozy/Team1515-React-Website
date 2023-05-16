@@ -15,7 +15,6 @@ import Rachel from "./rachel_1500x1000.jpg";
 import Arielle from "./ariella_1500x1000.jpg";
 import Castle from "./castle_1500x1000.png";
 import LeadersBG from "./leadership.jpg";
-import Footer from "../Footer/Footer";
 import { useRef } from "react";
 import Footer from "../Footer/Footer";
 const LeadersPage = (props) => {
