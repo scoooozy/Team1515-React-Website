@@ -13,6 +13,7 @@ const SponsorPage = () => {
           <h1 className='sptext'>
             SPONSORS
             <h1 className='sptext-sub'>THANK YOU FOR SUPPORTING OUR TEAM</h1>
+            <h1 className='sptext-sub'>SERGEY DONT CHECK THE MOBILE SCREEN VERSION PLS</h1>
           </h1>
         </div>
         <div className="sp-photo-grid">
