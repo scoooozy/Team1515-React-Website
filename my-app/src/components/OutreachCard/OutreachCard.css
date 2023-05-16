@@ -1,0 +1,8 @@
+.outreach-card{
+    border: 2px solid black;
+    margin: 10px;
+}
+.carousel-item > img{
+    height: 450px !important;
+    aspect-ratio: 4 / 3;
+}

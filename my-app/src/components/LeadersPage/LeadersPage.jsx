@@ -16,7 +16,6 @@ import Arielle from "./ariella_1500x1000.jpg";
 import Castle from "./castle_1500x1000.png";
 import LeadersBG from "./leadership.jpg";
 import { useRef } from "react";
-import Footer from "../Footer/Footer";
 const LeadersPage = (props) => {
   const ref = useRef(null);
   const handleScroll = () => {
@@ -33,7 +32,7 @@ const LeadersPage = (props) => {
           Scroll Down
         </button>
       </Header>
-      <Container>
+      <Container className="person-card-container">
         <Row>
           <PersonCard
             ref={ref}
@@ -90,6 +89,7 @@ const LeadersPage = (props) => {
           />{" "}
         </Row>
       </Container>
+      <Footer/>
     </div>
   );
 };

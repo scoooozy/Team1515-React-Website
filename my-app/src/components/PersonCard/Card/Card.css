@@ -91,3 +91,6 @@ p{
 .row{
   justify-content: center;
 }
+.person-card-container{
+  padding: 50px 0;
+}

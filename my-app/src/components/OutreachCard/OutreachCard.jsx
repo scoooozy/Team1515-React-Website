@@ -2,6 +2,7 @@ import React from "react";
 import "./OutreachCard.css";
 import Carousel from "react-bootstrap/Carousel";
 import Card from "react-bootstrap/Card";
+import { forwardRef } from "react";
 function CardCarousel({ images }) {
   return (
     <Carousel>
@@ -14,10 +15,10 @@ function CardCarousel({ images }) {
   );
 }
 
-const OutreachCard = ({ images, title, text }) => {
+const OutreachCard = ({ images, title, text },ref) => {
   return (
-    <Card style={{ width: "45rem" }}>
-      <CardCarousel images={images} />
+    <Card ref={ref}style={{ width: "45rem" }} className="outreach-card"> 
+      <CardCarousel images={images}  className="outreach-images"/>
       <Card.Body>
         <Card.Title>{title}</Card.Title>
         <Card.Text>{text}</Card.Text>
@@ -26,4 +27,4 @@ const OutreachCard = ({ images, title, text }) => {
   );
 };
 
-export default OutreachCard;
+export default forwardRef(OutreachCard);
