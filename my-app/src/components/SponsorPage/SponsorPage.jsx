@@ -18,7 +18,7 @@ const SponsorPage = () => {
         <div className="sp-photo-grid">
           <div className="sp-row">
             <img src={GeneHaas} alt="Gene Haas Foundation" />
-            <img src={OhanaCo} alt="Ohana & Co" className='Ohana'/>
+            <img src={OhanaCo} alt="Ohana & Co"/>
           </div>
         </div>
       </div>  
