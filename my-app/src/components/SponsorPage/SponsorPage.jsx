@@ -3,6 +3,8 @@ import NavPage from '../Navbar/Navbar'
 import './SponsorPage.css'
 import GeneHaas from './Gene Haas Logo.png'
 import OhanaCo from './Ohana & Co Logo.png'
+import Footer from '../Footer/Footer'
+import whiteHaas from './Haas White.png'
 
 const SponsorPage = () => {
   return (
@@ -18,11 +20,12 @@ const SponsorPage = () => {
         </div>
         <div className="sp-photo-grid">
           <div className="sp-row">
-            <img src={GeneHaas} alt="Gene Haas Foundation" />
+            <img src={whiteHaas} alt="Gene Haas Foundation" />
             <img src={OhanaCo} alt="Ohana & Co"/>
           </div>
         </div>
-      </div>  
+      </div> 
+      <Footer /> 
     </div>
   )
 }

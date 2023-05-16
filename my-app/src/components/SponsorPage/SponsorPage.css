@@ -12,6 +12,7 @@
 .black {
     background-color: rgb(16, 15, 15);
     min-height: 100vh;
+    padding-bottom: 20vh;
 }
   
 .sptext {
@@ -29,6 +30,7 @@
 }
 
 .sp-photo-grid {
+    margin-top: 10vh;
     display: flex;
     grid-template-columns: 1fr 1fr;
     grid-gap: 10px;
