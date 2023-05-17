@@ -6,6 +6,10 @@ import OhanaCo from "./Ohana & Co Logo.png";
 import Footer from "../Footer/Footer";
 import whiteHaas from "./Haas White.png";
 import { Container, Row } from "react-bootstrap";
+import Enterprise from "./Enterprise Logo.png";
+import BHEf from "./BHEF Logo.png"
+import intuitive from "./Intuitive Logo.png";
+import Industrious from "./Industrious Logo.png";
 
 const SponsorPage = () => {
   return (
@@ -22,6 +26,10 @@ const SponsorPage = () => {
             <Row>
               <img src={whiteHaas} alt="Gene Haas Foundation" className="sp-img" />
               <img src={OhanaCo} alt="Ohana & Co"  className="sp-img"/>
+              <img src={BHEf} alt="BHEF" className="sp-img" />
+              <img src={Enterprise} alt="Enterprise"  className="sp-img"/>
+              <img src={intuitive} alt="BHEF" className="sp-img" />
+              <img src={Industrious} alt="Enterprise"  className="sp-img"/>
             </Row>
           </Container>
       </div>

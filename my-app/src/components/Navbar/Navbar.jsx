@@ -41,7 +41,7 @@ function NavPage(props) {
                     Outreach
                   </NavDropdown.Item>
                 </Link>
-                <NavDropdown.Divider />
+            
                 <Link className="droplinks" to="/Sponsor">
                   <NavDropdown.Item href="#action/3.3" className="droplinks">
                     Sponsor
