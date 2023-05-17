@@ -7,6 +7,7 @@ import albion2 from "./images/albion2.jpg";
 import albion3 from "./images/albion3.jpg";
 import Header from "../Header/Header";
 import { useRef } from "react";
+import { Container } from "react-bootstrap";
 const OutreachPage = () => {
   const events = [
     {
