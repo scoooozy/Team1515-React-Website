@@ -1,6 +1,7 @@
 .outreach-card{
     border: 2px solid black;
     margin: 10px;
+    max-width: 700px;
 }
 .carousel-item > img{
     height: 450px !important;
