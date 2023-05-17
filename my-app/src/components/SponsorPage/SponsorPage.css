@@ -29,18 +29,11 @@
     font-size: calc(1.375rem + 0.2vw);
 }
 
-.sp-photo-grid {
+.sp-img {
     margin-top: 10vh;
-    display: flex;
-    grid-template-columns: 1fr 1fr;
-    grid-gap: 10px;
-    justify-content: center;
-}   
-  
-.sp-row {
-    display: flex;
-    justify-content: space-between;
-    
+    max-width: 70vh;
+    padding-left: 5vh;
+    padding-right: 5vh;
 }
   
 .sp-row img {
